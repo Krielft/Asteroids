@@ -7,6 +7,7 @@ TagManager:
   - Asteroid
   - Bullet
   - Boundary
+  - EntitiesBoundary
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Boundary
   - Ignore Collisions
   - Bouncy Asteroid
-  - 
+  - Entities Boundary
   - 
   - 
   - 

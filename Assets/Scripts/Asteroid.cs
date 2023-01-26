@@ -58,6 +58,10 @@ public class Asteroid : MonoBehaviour
             Destroy(gameObject);
             Instantiate(ColSFX, transform.position, transform.rotation);
         }
+        else if (collision.gameObject.CompareTag("EntitiesBoundary"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     private Asteroid CreateSplit()
