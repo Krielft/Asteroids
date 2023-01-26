@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ae525bc4b9305449cd0ea5e041c61e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidPrefab: {fileID: 4394751245055917805, guid: 784457ffd007edb439542cee61bb2ca8,
+  asteroidPrefab: {fileID: 4394751245055917805, guid: 751ed364263ff1c44bdc1fee00f91ecf,
     type: 3}
   spawnDistance: 12
   spawnRate: 1
@@ -685,7 +685,7 @@ MonoBehaviour:
   thrustSpeed: 1
   rotationSpeed: 0.1
   respawnDelay: 3
-  respawnInvulnerability: 3
+  respawnInvulnerability: 5
 --- !u!1 &556392472
 GameObject:
   m_ObjectHideFlags: 0

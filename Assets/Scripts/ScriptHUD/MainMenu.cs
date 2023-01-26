@@ -66,19 +66,6 @@ public class MainMenu : MonoBehaviour
         graphicBoard.SetActive(true);
         controlsBoard.SetActive(false);
     }
-    public void Extra()
-    {
-        ExtraPanel.SetActive(true);
-        CreditsButton.SetActive(true);
-        QuitGameButton.SetActive(false);
-    }
-
-    public void CloseExtra()
-    {
-        ExtraPanel.SetActive(false);
-        CreditsButton.SetActive(false);
-        QuitGameButton.SetActive(true);
-    }
 
     public void Credits()
     {
