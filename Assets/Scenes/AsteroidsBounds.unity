@@ -714,6 +714,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroidPrefab: {fileID: 4394751245055917805, guid: 751ed364263ff1c44bdc1fee00f91ecf,
     type: 3}
+  gameManager: {fileID: 1031442192}
+  scoreThreshold: 500
   spawnDistance: 12
   spawnRate: 1
   amountPerSpawn: 1

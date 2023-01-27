@@ -3,6 +3,8 @@
 public class AsteroidSpawner : MonoBehaviour
 {
     public Asteroid asteroidPrefab;
+    public GameManager gameManager;
+    public int scoreThreshold = 500;
     public float spawnDistance = 12f;
     public float spawnRate = 1f;
     public int amountPerSpawn = 1;
@@ -16,6 +18,34 @@ public class AsteroidSpawner : MonoBehaviour
 
     public void Spawn()
     {
+        if (gameManager.score >= scoreThreshold)
+        {
+            CancelInvoke();
+            spawnRate = 0.75f;
+            InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
+            scoreThreshold = 1500;
+            if (gameManager.score >= scoreThreshold)
+            {
+                CancelInvoke();
+                spawnRate = 0.5f;
+                InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
+                scoreThreshold = 3000;
+                if (gameManager.score >= scoreThreshold)
+                {
+                    CancelInvoke();
+                    spawnRate = 0.25f;
+                    InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
+                    scoreThreshold = 6000;
+                    if (gameManager.score >= scoreThreshold)
+                    {
+                        CancelInvoke();
+                        spawnRate = 0.1f;
+                        InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
+                        scoreThreshold = 10000;
+                    }
+                }
+            }
+        }
         for (int i = 0; i < amountPerSpawn; i++)
         {
            
@@ -38,5 +68,4 @@ public class AsteroidSpawner : MonoBehaviour
             asteroid.SetTrajectory(trajectory);
         }
     }
-
 }
