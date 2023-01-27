@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverUI;
     public GameObject ColSFX;
     public GameObject cameraObject;
+    public GameObject extraLifePrefab;
 
     public int score { get; private set; }
     public Text scoreText;
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         NewGame();
+        lives = 3;
     }
 
     private void Update()
@@ -59,6 +61,11 @@ public class GameManager : MonoBehaviour
         if (asteroid.size < 0.7f)
         {
             SetScore(score + 100);
+            float randomChance = Random.Range(0f, 1f);
+            if (randomChance <= 0.05f)
+            {
+                GameObject extraLife = Instantiate(extraLifePrefab, asteroid.transform.position, Quaternion.identity);
+            }
         }
         else if (asteroid.size < 1.4f)
         {
@@ -96,7 +103,7 @@ public class GameManager : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
-    private void SetLives(int lives)
+    public void SetLives(int lives)
     {
         this.lives = lives;
         livesText.text = lives.ToString();

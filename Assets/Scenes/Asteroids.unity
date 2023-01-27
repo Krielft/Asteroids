@@ -642,7 +642,6 @@ MonoBehaviour:
   scoreThreshold: 500
   spawnDistance: 12
   spawnRate: 1
-  increasedSpawnRate: 0.5
   amountPerSpawn: 1
   trajectoryVariance: 15
 --- !u!4 &293394487
@@ -8082,6 +8081,8 @@ MonoBehaviour:
   gameOverUI: {fileID: 1759306016}
   ColSFX: {fileID: 8765811369667131879, guid: 48f8d549d9cdb514187c9b0e7b1ca991, type: 3}
   cameraObject: {fileID: 519420028}
+  extraLifePrefab: {fileID: 9162083051467294218, guid: 2126b828ead415342ac1d63244008ce2,
+    type: 3}
   scoreText: {fileID: 1159035112}
   lives: 3
   livesText: {fileID: 2013675850}
