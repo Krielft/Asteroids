@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject ColSFX;
     public GameObject cameraObject;
     public GameObject extraLifePrefab;
+    public AsteroidSpawner asteroidSpawner;
 
     public int score { get; private set; }
     public Text scoreText;
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
     {
         if (lives <= 0 && Input.GetKeyDown(KeyCode.Return)) {
             NewGame();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 

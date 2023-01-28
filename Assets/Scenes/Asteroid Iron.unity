@@ -868,6 +868,7 @@ MonoBehaviour:
   cameraObject: {fileID: 2094084018}
   extraLifePrefab: {fileID: 9162083051467294218, guid: 2126b828ead415342ac1d63244008ce2,
     type: 3}
+  asteroidSpawner: {fileID: 929186681}
   scoreText: {fileID: 1478774406}
   lives: 1
   livesText: {fileID: 1295225843}
