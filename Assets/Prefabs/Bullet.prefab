@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1516617292126257879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 1}
+  m_LocalScale: {x: 0.038941875, y: 0.11349603, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -145,5 +145,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 500
   maxLifetime: 10
-  TirSFX: {fileID: 5273696851198719284, guid: 2f962ea411f4f214c955ed625c6d5460, type: 3}
-  ColSFX: {fileID: 8765811369667131879, guid: 48f8d549d9cdb514187c9b0e7b1ca991, type: 3}

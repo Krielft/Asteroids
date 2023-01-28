@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Camera_Shake.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Passage.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\ScriptHUD\MainMenu.cs" />
     <Compile Include="Assets\Scripts\ScriptHUD\PauseMenu.cs" />
